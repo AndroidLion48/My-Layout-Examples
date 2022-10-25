@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_ig_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/igBtnDefault"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="30dp"
+            android:text="Instagram from Tutorial"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/igBtnLinearLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+
+            android:layout_marginTop="12dp"
+            android:text="Instagram with Linear Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/igBtnGridLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+
+            android:layout_marginTop="12dp"
+            android:text="Instagram with Grid Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/igBtnRelativeLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Instagram with Relative Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/igBtnConstraintLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Instagram with Constraint Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fbBtnConstraintLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Facebook with Constraint Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fbBtnLinearLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Facebook with Linear Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fbBtnRelativeLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Facebook with Relative Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fbBtnGridLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Facebook with Grid Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

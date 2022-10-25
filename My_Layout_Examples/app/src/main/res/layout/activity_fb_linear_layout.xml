@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fb_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".linearlayouts.FbLinearLayoutActivity">
+
+    <ImageView
+        android:id="@+id/facebook_logo_iv"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ic_facebook_logo_wine" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_textfield"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:textColorHint="@color/dark_gray">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Email or Phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_textfield"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:textColorHint="@color/dark_gray">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="   Password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="LOG IN" />
+
+    <TextView
+        android:id="@+id/forgot_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</LinearLayout>

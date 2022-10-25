@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fb_background"
+    tools:context=".constraintlayouts.IgConstraintLayoutActivity">
+
+    <ImageView
+        android:id="@+id/facebook_logo_iv"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_facebook_logo_wine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_textfield"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:textColorHint="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebook_logo_iv">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Email or Phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_textfield"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:textColorHint="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="@id/username_textfield"
+        app:layout_constraintStart_toStartOf="@id/username_textfield"
+        app:layout_constraintTop_toBottomOf="@id/username_textfield">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="   Password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="LOG IN"
+        app:layout_constraintEnd_toEndOf="@id/password_textfield"
+        app:layout_constraintStart_toStartOf="@id/password_textfield"
+        app:layout_constraintTop_toBottomOf="@id/password_textfield" />
+
+    <TextView
+        android:id="@+id/forgot_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
