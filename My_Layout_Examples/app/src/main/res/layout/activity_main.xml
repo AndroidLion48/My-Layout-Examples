@@ -25,7 +25,6 @@
             android:id="@+id/igBtnLinearLayout"
             android:layout_width="250dp"
             android:layout_height="95dp"
-
             android:layout_marginTop="12dp"
             android:text="Instagram with Linear Layout"
             android:textColor="@color/redish_material_500"
@@ -35,7 +34,6 @@
             android:id="@+id/igBtnGridLayout"
             android:layout_width="250dp"
             android:layout_height="95dp"
-
             android:layout_marginTop="12dp"
             android:text="Instagram with Grid Layout"
             android:textColor="@color/redish_material_500"
@@ -95,6 +93,41 @@
             android:textColor="@color/redish_material_500"
             android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/twBtnConstraintLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Twitter with Constraint Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/twBtnLinearLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Twitter with Linear Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/twBtnRelativeLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Twitter with Relative Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/twBtnGridLayout"
+            android:layout_width="250dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:text="Twitter with Grid Layout"
+            android:textColor="@color/redish_material_500"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </ScrollView>

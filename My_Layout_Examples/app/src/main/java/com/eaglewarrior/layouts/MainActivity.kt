@@ -1,18 +1,22 @@
 package com.eaglewarrior.layouts
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.eaglewarrior.layouts.constraintlayouts.FbConstraintLayoutActivity
 import com.eaglewarrior.layouts.constraintlayouts.IgConstraintLayoutActivity
+import com.eaglewarrior.layouts.constraintlayouts.TwConstraintLayoutActivity
 import com.eaglewarrior.layouts.gridlayouts.FbGridLayoutActivity
 import com.eaglewarrior.layouts.gridlayouts.IgGridLayoutActivity
+import com.eaglewarrior.layouts.gridlayouts.TwGridLayoutActivity
 import com.eaglewarrior.layouts.linearlayouts.FbLinearLayoutActivity
 import com.eaglewarrior.layouts.linearlayouts.IgLinearLayoutActivity
+import com.eaglewarrior.layouts.linearlayouts.TwLinearLayoutActivity
 import com.eaglewarrior.layouts.relativelayouts.FbRelativeLayoutActivity
 import com.eaglewarrior.layouts.relativelayouts.IgRelativeLayoutActivity
+import com.eaglewarrior.layouts.relativelayouts.TwRelativeLayoutActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,5 +76,26 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FbRelativeLayoutActivity::class.java)
             startActivity(intent)
         })
+
+        val twConstraintLayoutButton = findViewById<Button>(R.id.twBtnConstraintLayout)
+        twConstraintLayoutButton.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, TwConstraintLayoutActivity::class.java)
+        })
+
+        val twGridLayoutButton =  findViewById<Button>(R.id.twBtnGridLayout)
+        twGridLayoutButton.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, TwGridLayoutActivity::class.java)
+        })
+
+        val twRelativeLayoutButton =  findViewById<Button>(R.id.twBtnRelativeLayout)
+        twRelativeLayoutButton.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, TwRelativeLayoutActivity::class.java)
+        })
+
+        val twLinearLayoutButton = findViewById<Button>(R.id.twBtnLinearLayout)
+        twLinearLayoutButton.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, TwLinearLayoutActivity::class.java)
+        })
+
     }
 }

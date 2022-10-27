@@ -14,28 +14,74 @@
         android:theme="@style/Theme.LayoutInstagramLogin"
         tools:targetApi="31">
         <activity
-            android:name="com.eaglewarrior.layouts.relativelayouts.FbRelativeLayoutActivity"
+            android:name=".TwRelativeLayoutActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TwConstraintLayoutActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TwGridLayoutActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TwLinearLayoutActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FbRelativeLayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.eaglewarrior.layouts.gridlayouts.FbGridLayoutActivity"
+            android:name=".FbGridLayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.eaglewarrior.layouts.linearlayouts.FbLinearLayoutActivity"
+            android:name=".FbLinearLayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.eaglewarrior.layouts.constraintlayouts.FbConstraintLayoutActivity"
+            android:name=".FbConstraintLayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.eaglewarrior.layouts.constraintlayouts.IgConstraintLayoutActivity"
+            android:name=".IgConstraintLayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.eaglewarrior.layouts.relativelayouts.IgRelativeLayoutActivity"
+            android:name=".IgRelativeLayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.eaglewarrior.layouts.gridlayouts.IgGridLayoutActivity"
+            android:name=".IgGridLayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.eaglewarrior.layouts.linearlayouts.IgLinearLayoutActivity"
+            android:name=".IgLinearLayoutActivity"
             android:exported="false" />
         <activity
             android:name="com.eaglewarrior.layouts.LoginActivity"
